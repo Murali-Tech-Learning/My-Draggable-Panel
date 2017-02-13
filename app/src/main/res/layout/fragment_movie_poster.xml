@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="2dp">
+
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_thumbnail"
+            android:text="Current Video"
+            android:textAppearance="@style/TextViewMediumBold" />
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/likes"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Like"
+            android:textAppearance="@style/SmallTextSecondary" />
+
+        <TextView
+            android:id="@+id/dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/like"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Unlike"
+            android:textAppearance="@style/SmallTextSecondary" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/like"
+            android:layout_alignBottom="@+id/like"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="2.5K Likes"
+            android:textAppearance="@style/SmallTextSecondary" />
+
+        <TextView
+            android:id="@+id/views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/likes"
+            android:layout_alignBottom="@+id/likes"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/iv_thumbnail"
+            android:layout_toRightOf="@+id/iv_thumbnail"
+            android:gravity="center"
+            android:text="5K Views"
+            android:textAppearance="@style/SmallTextSecondary" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listing_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content_layout"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+
+</RelativeLayout>

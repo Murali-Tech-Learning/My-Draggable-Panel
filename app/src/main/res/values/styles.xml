@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="TextViewMediumBold" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@color/medium_text_color</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Helvetica_Neuete_CE_55_Roman.ttf</item>
+    </style>
+
+    <style name="SmallTextSecondary" parent="android:TextAppearance.Small">
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/medium_text_color</item>
+        <item name="fontPath">fonts/Helvetica_Neue_CE_55_Roman.ttf</item>
+    </style>
+
+</resources>
